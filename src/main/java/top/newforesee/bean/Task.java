@@ -1,10 +1,12 @@
 package top.newforesee.bean;
 
+import lombok.Data;
+
 /**
  * Task实体类
  * creat by newforesee 2018/11/27
  */
-
+@Data
 public class Task {
 //    `task_id` int(11) NOT NULL AUTO_INCREMENT,
 //  `task_name` varchar(255) DEFAULT NULL,

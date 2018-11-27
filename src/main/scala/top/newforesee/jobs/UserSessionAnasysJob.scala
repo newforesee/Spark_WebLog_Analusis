@@ -1,6 +1,9 @@
 package top.newforesee.jobs
 
 import org.apache.spark.sql.SparkSession
+import top.newforesee.bean.Task
+import top.newforesee.dao.common.ITaskDao
+import top.newforesee.dao.common.impl.TaskDaoImpl
 import top.newforesee.mock.MockData
 import top.newforesee.utils.ResourcesUtils
 
@@ -34,6 +37,12 @@ object UserSessionAnasysJob {
     val buffer = new StringBuffer()
     //根据从mysql中task表中的字段task_param查询到值
     buffer.append("select * from ")
+    val taskId: Int = args(0).toInt
+    val taskDao: ITaskDao = new TaskDaoImpl
+    val task: Task = taskDao.findTaskById(taskId)
+
+
+
 
 
   }
