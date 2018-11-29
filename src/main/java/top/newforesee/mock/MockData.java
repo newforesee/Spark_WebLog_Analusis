@@ -68,7 +68,7 @@ public class MockData {
         //模拟电商平台注册用户的所在地
         //cities = new String[]{"南京", "无锡", "徐州", "常州", "苏州", "南通", "连云港", "淮安", "盐城", "扬州", "镇江", "泰州", "宿迁", "杭州", "宁波", "温州", "嘉兴", "湖州", "绍兴", "金华", "衢州", "舟山", "台州", "丽水", "合肥", "芜湖", "蚌埠", "淮南", "马鞍山", "淮北", "铜陵", "安庆", "黄山", "滁州", "阜阳", "宿州", "巢湖", "六安", "亳州", "池州", "宣城", "南昌", "景德镇", "萍乡", "九江", "新余", "鹰潭", "赣州", "吉安", "宜春", "抚州", "上饶", "合肥", "芜湖", "蚌埠", "淮南", "马鞍山", "淮北", "铜陵", "安庆", "黄山", "滁州", "阜阳", "宿州", "巢湖", "六安", "亳州", "池州", "宣城", "石家庄", "唐山", "秦皇岛", "邯郸", "邢台", "保定", "张家口", "承德", "沧州", "廊坊", "衡水", "北京", "上海", "天津", "重庆", "哈尔滨", "齐齐哈尔", "鸡西", "鹤岗", "双鸭山", "大庆", "伊春", "佳木斯", "七台河", "牡丹江", "黑河", "绥化", "大兴安岭"};
         //cities = new String[]{"南京", "无锡", "徐州", "常州", "苏州", "南通", "连云港", "淮安", "盐城", "扬州"};
-        cities = new String[]{"石家庄","唐山","秦皇岛","沈阳","鞍山","本溪","南京","无锡","常州","杭州","宁波","温州"};
+        cities = new String[]{"石家庄", "唐山", "秦皇岛", "沈阳", "鞍山", "本溪", "南京", "无锡", "常州", "杭州", "宁波", "温州"};
 
         /**
          * 模拟的是注册用户浏览了电商品台上哪些型号的电子产品
@@ -111,7 +111,7 @@ public class MockData {
             String productName = productNames[random.nextInt(productNames.length)];
             String extendInfo = "{\"product_status\": " + productStatus[random.nextInt(productStatus.length)] + "}";
 
-            Row row = RowFactory.create(productId, productName, extendInfo);
+            org.apache.spark.sql.Row row = RowFactory.create(productId, productName, extendInfo);
             rows.add(row);
         }
 
@@ -123,6 +123,7 @@ public class MockData {
                 DataTypes.createStructField("extend_info", DataTypes.StringType, true)));
 
         Dataset<Row> dataset = sqlContext.createDataFrame(rowsRDD, schema);
+        //若是数据事先已经存在于hdfs，此处就应该创建一张外部hive表，建立与hdfs上目录中的数据的映射关系。
         dataset.createOrReplaceTempView("product_info");
     }
 
@@ -139,7 +140,7 @@ public class MockData {
             long userid = i;
             String username = nickNames[random.nextInt(nickNames.length)];
             String name = userNames[random.nextInt(userNames.length)];
-            int age = random.nextInt(50) + 20;
+            int age = random.nextInt(50) + 18;
             String professional = professionals[random.nextInt(professionals.length)];
             String city = cities[random.nextInt(cities.length)];
             String sex = sexes[random.nextInt(sexes.length)];
@@ -152,7 +153,7 @@ public class MockData {
         JavaRDD<Row> rowsRDD = sc.parallelize(rows);
 
         StructType schema = DataTypes.createStructType(Arrays.asList(
-                DataTypes.createStructField("user_id", DataTypes.LongType, true),
+                DataTypes.createStructField("user_id", DataTypes.LongType, false),
                 DataTypes.createStructField("username", DataTypes.StringType, true),
                 DataTypes.createStructField("name", DataTypes.StringType, true),
                 DataTypes.createStructField("age", DataTypes.IntegerType, true),
@@ -176,12 +177,14 @@ public class MockData {
         List<Row> rows = new LinkedList<>();
 
         BufferedWriter bw = new BufferedWriter(new FileWriter("date/date.log"));
+
         //每天有一百个用户访问电商品台
         for (int i = 0; i < 100; i++) {
             long userId = random.nextInt(100);
 
             //每个用户每天访问十次电商平台
             for (int j = 0; j < 10; j++) {
+                //UUID:生成全球唯一的一个字符串标识符
                 String sessionId = UUID.randomUUID().toString().replace("-", "");
                 //每次会话随机访问页面
                 randomAccessPage(rows, date, bw, userId, sessionId);
@@ -203,8 +206,10 @@ public class MockData {
                 DataTypes.createStructField("order_category_ids", DataTypes.StringType, true),
                 DataTypes.createStructField("order_product_ids", DataTypes.StringType, true),
                 DataTypes.createStructField("pay_category_ids", DataTypes.StringType, true),
-                DataTypes.createStructField("pay_product_ids", DataTypes.StringType, true),
-                DataTypes.createStructField("city_id", DataTypes.LongType, true)));
+                DataTypes.createStructField("pay_product_ids", DataTypes.StringType, true)));
+
+        //城市id,因为在用户hive表中已经有用户id，通过动作表和用户表进行内连接操作就可以定位处用户是属于哪个城市的
+        //DataTypes.createStructField("city_id", DataTypes.LongType, true)
 
         Dataset<Row> dataset = sqlContext.createDataFrame(rowsRDD, schema);
         dataset.createOrReplaceTempView("user_visit_action");
@@ -223,13 +228,17 @@ public class MockData {
         String baseActionTime = date + " " + StringUtils.fulfuill(String.valueOf(random.nextInt(24)));
         //每次会话期间一个用户访问1~100个页面
         //每循环一次，构建一个Row的实例，该实例中的数据最终用来作为hive表user_visit_action中的一条记录
+
+        //每循环一次，模拟的是一个用户在一次session范围内，随机访问的页面的动作（点击，搜索，下单，支付等等）
         for (int k = 0; k < random.nextInt(100); k++) {
             long pageId = random.nextInt(100);
             String actionTime = baseActionTime + ":" + StringUtils.fulfuill(String.valueOf(random.nextInt(60))) + ":" + StringUtils.fulfuill(String.valueOf(random.nextInt(60)));
+
             if (actionTime.length() != 19) {
                 bw.write(actionTime);
                 bw.newLine();
             }
+
             String searchKeyword = null;
             Long clickProductId = null;
             String orderCategoryIds = null;
@@ -245,6 +254,7 @@ public class MockData {
                 if (clickCategoryId == null) {
                     clickCategoryId = Long.valueOf(String.valueOf(random.nextInt(100)));
                 }
+                //给产品id设置值之前，必须先判断对应的分类id是否有值，若没有，需要设置。因为产品一定是属于某个分类的！！
                 clickProductId = Long.valueOf(String.valueOf(random.nextInt(100)));
             } else if ("order".equals(action)) {
                 orderCategoryIds = String.valueOf(random.nextInt(100));
@@ -259,8 +269,10 @@ public class MockData {
                     pageId, actionTime, searchKeyword,
                     clickCategoryId, clickProductId,
                     orderCategoryIds, orderProductIds,
-                    payCategoryIds, payProductIds,
-                    Long.valueOf(String.valueOf(random.nextInt(10))));
+                    payCategoryIds, payProductIds);
+
+            //Long.valueOf(String.valueOf(random.nextInt(10)))
+
             rows.add(row);
         }
     }

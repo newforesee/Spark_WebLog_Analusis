@@ -18,7 +18,7 @@ public class TaskParam {
     /**
      * 性别
      */
-    private List<String> gender;
+    private List<String> genders;
 
     /**
      * 职业
@@ -27,6 +27,6 @@ public class TaskParam {
     /**
      * 城市
      */
-    private List<String> city;
+    private List<String> cities;
 
 }
