@@ -1,5 +1,6 @@
 package top.newforesee.jobs.ad
 
+import java.util
 import java.util.Date
 
 import kafka.serializer.StringDecoder
@@ -7,6 +8,7 @@ import org.apache.spark.streaming.dstream.DStream
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
+import top.newforesee.bean.ad.AdUserClickCount
 import top.newforesee.dao.ad.IADUserClickCountDao
 import top.newforesee.dao.ad.impl.ADUserClickCountDaoImpl
 import top.newforesee.utils.{DateUtils, ResourcesUtils}
@@ -51,6 +53,7 @@ object AdFlowRealTimeCalJob {
     perDayDS.foreachRDD(rdd=>{
       if (!rdd.isEmpty()) rdd.foreachPartition((itr: Iterator[(String, Long)]) =>{
         val dao: IADUserClickCountDao = new ADUserClickCountDaoImpl
+        val beans: util.List[AdUserClickCount] = new util.LinkedList[AdUserClickCount]()
 
       })
     })
