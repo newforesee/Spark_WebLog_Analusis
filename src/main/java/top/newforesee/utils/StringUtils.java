@@ -116,4 +116,22 @@ public class StringUtils {
 		return buffer.toString();
 	}
 
+     /**
+      * 将传入的字段按顺序和指定分隔符拼接
+      * @param separator 分隔符
+      * @param strings  要拼接的字符串(可变)
+      * @return 拼接后的结果
+      */
+     public static String appender(String separator, String... strings) {
+
+         StringBuilder sb = new StringBuilder();
+         for (int i = 0; i < strings.length; i++) {
+             if (i == strings.length - 1) {
+                 sb.append(strings[i]);
+             } else
+                 sb.append(strings[i]).append(separator);
+         }
+         return sb.toString();
+     }
+
 }

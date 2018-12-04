@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099395b3-1468-4b27-8d3d-a8c78f33e086" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/ad/AdBlackList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/IAdBlackListDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl/AdBlackListDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/ad/AdStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/IAdStatDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl/AdStatDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-statics.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log-statics.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/local/dbcp-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/local/dbcp-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/utils/StringUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/local/dbcp-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local/dbcp-config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,20 +39,21 @@
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2441" />
+          <entry key="java" value="2611" />
           <entry key="properties" value="132" />
-          <entry key="scala" value="5723" />
+          <entry key="scala" value="6238" />
           <entry key="sql" value="6" />
           <entry key="txt" value="62" />
           <entry key="xml" value="46" />
@@ -62,18 +61,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2441" />
+          <entry key="JAVA" value="2611" />
           <entry key="PLAIN_TEXT" value="62" />
           <entry key="Properties" value="132" />
           <entry key="SQL" value="6" />
-          <entry key="Scala" value="5723" />
+          <entry key="Scala" value="6238" />
           <entry key="XML" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="76" />
+          <entry key="java" value="81" />
           <entry key="log" value="1" />
           <entry key="properties" value="11" />
           <entry key="scala" value="28" />
@@ -84,7 +83,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="76" />
+          <entry key="JAVA" value="81" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="11" />
           <entry key="SQL" value="3" />
@@ -96,14 +95,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="180">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#32#48#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/IAdStatDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl/AdStatDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/ad/AdStat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/utils/StringUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2596">
+              <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -174,10 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/top/newforesee/dao/common/impl/TaskDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/top/newforesee/bean/Task.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/UserSessionAnasysJob.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/sessions/scriptFile.scala" />
         <option value="$PROJECT_DIR$/src/main/java/top/newforesee/constants/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/sessions/SessionAggrStatAccumulator.scala" />
@@ -224,7 +261,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/local/dbcp-config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/IAdBlackListDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl/AdBlackListDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/newforesee/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/IAdStatDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/top/newforesee/bean/ad/AdStat.java" />
         <option value="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl/AdStatDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -246,10 +287,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="507" />
-    <option name="y" value="58" />
-    <option name="width" value="1405" />
-    <option name="height" value="947" />
+    <option name="x" value="732" />
+    <option name="y" value="28" />
+    <option name="width" value="1586" />
+    <option name="height" value="995" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -313,16 +354,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="newforesee" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="ad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SparkLog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparkLog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="newforesee" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,6 +376,15 @@
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="ad" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkLog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkLog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="newforesee" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SparkLog" type="b2602c69:ProjectViewProjectNode" />
@@ -415,6 +455,16 @@
               <item name="SparkLog" type="b2602c69:ProjectViewProjectNode" />
               <item name="SparkLog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="newforesee" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkLog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkLog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -443,7 +493,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543835298923" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543895841400" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -452,12 +502,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl" />
-      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/bean/ad" />
-      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/dao" />
-      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad" />
-      <recent name="$PROJECT_DIR$/src/main/resources/db" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="top.newforesee.bean.ad" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/utils" />
@@ -465,6 +511,13 @@
       <recent name="$PROJECT_DIR$/src/main/resources/production" />
       <recent name="$PROJECT_DIR$/src/main/resources/local" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl" />
+      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/bean/ad" />
+      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/dao" />
+      <recent name="$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad" />
+      <recent name="$PROJECT_DIR$/src/main/resources/db" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -587,7 +640,8 @@
       <workItem from="1543553461404" duration="17834000" />
       <workItem from="1543596780417" duration="2884000" />
       <workItem from="1543629151835" duration="10816000" />
-      <workItem from="1543825485781" duration="4161000" />
+      <workItem from="1543825485781" duration="10429000" />
+      <workItem from="1543884555468" duration="4040000" />
     </task>
     <task id="LOCAL-00001" summary="搭建项目框架，构建工具类">
       <created>1543240556624</created>
@@ -638,7 +692,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543600859667</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SparkStreaming 广告实时流计算模块编写">
+      <created>1543835447133</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543835447133</updated>
+    </task>
+    <task id="LOCAL-00009" summary="SparkStreaming 广告实时流计算模块编写">
+      <created>1543835456108</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1543835456108</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -656,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113613000" />
+    <option name="totallyTimeSpent" value="123921000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -668,9 +736,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="793" y="22" width="1405" height="947" extended-state="0" />
+    <frame x="732" y="28" width="1586" height="995" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832216" weight="0.21863537" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832216" visible="true" weight="0.19300517" />
       <window_info id="Structure" order="1" sideWeight="0.5016779" side_tool="true" weight="0.25054467" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -689,7 +758,7 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32807216" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.33032694" />
+      <window_info anchor="bottom" id="Version Control" order="12" visible="true" weight="0.31136364" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -773,34 +842,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="SparkStreaming 广告实时流计算模块编写" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/session/SessionAggrStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/session/ISessionAggrStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/top/newforesee/test/CommonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/session/ISessionRandomExtract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1085,13 +1126,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/utils/StringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#32#48#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2596">
+          <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1129,6 +1167,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/ad/AdStat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#32#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/IAdStatDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/ad/impl/AdStatDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

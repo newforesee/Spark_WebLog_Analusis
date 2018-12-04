@@ -9,10 +9,11 @@ import org.apache.spark.streaming.dstream.DStream
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
-import top.newforesee.bean.ad.{AdBlackList, AdUserClickCount}
+import org.apache.thrift
+import top.newforesee.bean.ad.{AdBlackList, AdStat, AdUserClickCount}
 import top.newforesee.dao.ad.impl.{ADUserClickCountDaoImpl, AdBlackListDaoImpl}
 import top.newforesee.dao.ad.{IADUserClickCountDao, IAdBlackListDao}
-import top.newforesee.utils.{DateUtils, ResourcesUtils}
+import top.newforesee.utils.{DateUtils, ResourcesUtils, StringUtils}
 
 /**
   * creat by newforesee 2018/11/30
@@ -30,59 +31,55 @@ object AdFlowRealTimeCalJob {
     val sc: SparkContext = new SparkContext(conf)
     val ssc: StreamingContext = new StreamingContext(sc, Seconds(2))
     sc.setLogLevel("WARN")
+
+
     //2.从消息队列中获取消息
     val dsFromKafka: DStream[(String, String)] = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](ssc, Map("metadata.broker.list" -> "master:9092,slave1:9092,slave2:9092"), Set("ad_real_time_log"))
-    dsFromKafka.print()
+    //dsFromKafka.print()
     //3.设置checkpoint
     ssc.checkpoint("ck")
     //计算:
     //1.实时计算各batch中的每天各用户对各广告的点击次数
     val perDayDS: DStream[(String, Long)] = calPerDayUserClickAdCnt(dsFromKafka)
 
-
-
     //2.使用filter过滤点击广告超过一百次的用户
     filterBlackListToDB(perDayDS)
 
-
-
     //3.使用transform操作,对每个batch RDD进行处理,都动态加载MySQL中的黑名单生成RDD ,然后进行join后(左外连接查询),
-    // 过滤掉batch RDD中的黑名单用户的广告点击行为
-    dsFromKafka.transform((rdd: RDD[(String, String)]) => {
-      //①动态加载mysql中的黑名单生成RDD
-      val dao: IAdBlackListDao = new AdBlackListDaoImpl
-      val allBlackList: util.List[AdBlackList] = dao.findAllAdBlackList()
-      //注意:RDD实例中就能获取其所属的SparkContext的实例,不能从外面获取
-      //      improt scala.collection.JavaConverters._
-      import scala.collection.JavaConverters._
-      val blackListRDD: RDD[(Int, String)] = rdd.sparkContext.parallelize(allBlackList.asScala).map((perBean: AdBlackList) => (perBean.getUser_id, ""))
+    val whiteList: DStream[String] = getAllWhiteList(dsFromKafka)
 
-      //将DStream中每个rdd中每个元素进行变形，(null,系统当前时间 省份 城市 用户id 广告id)~>变形为：(用户id，系统当前时间#省份#城市#用户id#广告id)
-     rdd.map((perEle: (String, String)) => {
-       val arr: Array[String] = perEle._2.split("\\s+")
+    //4、 使用updateStateByKey操作，实时计算每天各省各城市各广告的点击量，并时候更新到MySQL (隐藏者一个前提：基于上一步的白名单)
+    //步骤：
+    //①实时计算每天各省各城市各广告的点击量
+    //（1543635439749#河北#秦皇岛#36#2）
+    val ds: DStream[(String, Long)] = whiteList.map((iter: String) => {
+      val msg: String = iter
+      val arr: Array[String] = msg.split("#")
+      val day: String = DateUtils.formatDateKey(new Date(arr(0).toLong))
+      (StringUtils.appender("#", day, arr(1), arr(4)), 1L)
+    }).updateStateByKey((nowBatch: Seq[Long], historyAllBatch: Option[Long]) => {
+      val nowSum: Long = nowBatch.sum
+      val historySum: Long = historyAllBatch.getOrElse(0)
+      Some(nowSum + historySum)
+    })
+    //②将统计的结果实时更新到MySQL
+    ds.foreachRDD((rdd: RDD[(String, Long)]) =>{
+      if (!rdd.isEmpty()) {
+        rdd.foreachPartition((itr: Iterator[(String, Long)]) =>{
 
-      })
 
+        })
+      }
     })
 
+    //（1543635439749#河北#秦皇岛#36#2）
+
+    //②将统计的结果实时更新到MySQL
 
 
-    //4
-//    dsFromKafka.map((tuple: (String, String)) =>{
-//      val msg: String = tuple._2
-//      val arr: Array[String] = msg.split("\\s+")
-//      val day: String = DateUtils.formatDate(new Date(arr(0).trim.toLong))
-//      (day+"#"+arr(1).trim+"#"+arr(2).trim+"#"+arr(4).trim,1L)
-//    }).updateStateByKey((nowBatch:Seq[Long],historyAllBatch:Option[Long])=>{
-//
-//      Some(nowBatch.head+historyAllBatch.get)
-//
-//    })
+    //5、使用transform结合Spark SQL，统计每天各省份top3热门广告
 
-
-
-
-
+    //6、使用window操作，对最近1小时滑动窗口内的数据，计算出各广告各分钟的点击量，并更新到MySQL中
 
 
     //后续操作
@@ -94,7 +91,47 @@ object AdFlowRealTimeCalJob {
   }
 
   /**
+    *
+    * @param dsFromKafka
+    * @return
+    */
+  def getAllWhiteList(dsFromKafka: DStream[(String, String)]): DStream[String] = {
+    // 过滤掉batch RDD中的黑名单用户的广告点击行为
+    val whiteList: DStream[String] = dsFromKafka.transform((rdd: RDD[(String, String)]) => {
+      //①动态加载mysql中的黑名单生成RDD
+      val dao: IAdBlackListDao = new AdBlackListDaoImpl
+      val allBlackList: util.List[AdBlackList] = dao.findAllAdBlackList()
+      //注意:RDD实例中就能获取其所属的SparkContext的实例,不能从外面获取
+      //      improt scala.collection.JavaConverters._
+      import scala.collection.JavaConverters._
+      val blackListRDD: RDD[(Int, String)] = rdd.sparkContext.parallelize(allBlackList.asScala).map((perBean: AdBlackList) => (perBean.getUser_id, ""))
+
+      //将DStream中每个rdd中每个元素进行变形，(null,系统当前时间 省份 城市 用户id 广告id)~>变形为：(用户id，系统当前时间#省份#城市#用户id#广告id)
+      val rddTmp: RDD[(Int, String)] = rdd.map((perEle: (String, String)) => {
+        val arr: Array[String] = perEle._2.split("\\s+")
+        val time: String = arr(0).trim
+        val province: String = arr(1).trim
+        val city: String = arr(2).trim
+        val userId: Int = arr(3).toInt
+        val adId: String = arr(4).trim
+        (userId, StringUtils.appender("#", time, province, city, adId))
+
+      })
+      //黑名单RDD与DStream中当前的rdd进行左外连接查询, 设想其中一个结果：(34,(21312312321#湖北省#武汉市#34#2,None))
+      val whiteAndBlackRDD: RDD[(Int, (String, Option[String]))] = rddTmp.leftOuterJoin(blackListRDD)
+      //找出白名单
+      val returnRDD: RDD[String] = whiteAndBlackRDD.filter((_: (Int, (String, Option[String])))._2._2.isEmpty).map((perEle: (Int, (String, Option[String]))) => {
+
+        perEle._2._1
+      })
+      returnRDD
+    })
+    whiteList
+  }
+
+  /**
     * 使用filter过滤出每天对某个广告点击超过100次的黑名单用户，并写入MySQL中
+    *
     * @param perDayDS 当天点击数据
     */
   private def filterBlackListToDB(perDayDS: DStream[(String, Long)]): Unit = {
