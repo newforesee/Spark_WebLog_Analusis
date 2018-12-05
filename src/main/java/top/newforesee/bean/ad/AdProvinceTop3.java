@@ -21,14 +21,29 @@ public class AdProvinceTop3 {
      */
     private int ad_id;
 
+    /**
+     * 点击次数
+     */
+    private int click_count;
+
     public AdProvinceTop3() {
     }
 
-    public AdProvinceTop3(String date, String province, int ad_id) {
+    public AdProvinceTop3(String date, String province, int ad_id, int click_count) {
         this.date = date;
         this.province = province;
         this.ad_id = ad_id;
+        this.click_count = click_count;
     }
+
+    public int getClick_count() {
+        return click_count;
+    }
+
+    public void setClick_count(int click_count) {
+        this.click_count = click_count;
+    }
+
 
     public String getDate() {
         return date;

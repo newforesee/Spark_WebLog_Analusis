@@ -11,9 +11,9 @@ import org.apache.spark.streaming.dstream.DStream
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
-import top.newforesee.bean.ad.{AdBlackList, AdClickTrend, AdStat, AdUserClickCount}
-import top.newforesee.dao.ad.impl.{ADUserClickCountDaoImpl, AdBlackListDaoImpl, AdClickTrendDaoImpl, AdStatDaoImpl}
-import top.newforesee.dao.ad.{IADUserClickCountDao, IAdBlackListDao, IAdClickTrendDao, IAdStatDao}
+import top.newforesee.bean.ad._
+import top.newforesee.dao.ad.impl._
+import top.newforesee.dao.ad._
 import top.newforesee.utils.{DateUtils, ResourcesUtils, StringUtils}
 
 /**
@@ -101,7 +101,7 @@ object AdFlowRealTimeCalJob {
 
   /**
     *
-    * @param dsClickCnt
+    * @param dsClickCnt 实时计算每天各省各城市各广告的点击量
     */
   def calPerDayProviceHotADTop3(dsClickCnt: DStream[(String, Long)]): Unit = {
     var ssc: SQLContext = null
@@ -127,6 +127,7 @@ object AdFlowRealTimeCalJob {
         val adId: String = arr(2).trim
         Row(day, province, adId, tuple._2)
       })
+      rowRDD.checkpoint()
       val structType: StructType = {
         (new StructType)
           .add(StructField("day", StringType, nullable = false))
@@ -143,11 +144,11 @@ object AdFlowRealTimeCalJob {
         if (itr.nonEmpty) {
           val dao: IAdProvinceTop3Dao = new AdProvinceTop3DaoImpl
           val beans: util.List[AdProvinceTop3] = new util.LinkedList[AdProvinceTop3]
-          itr.foreach(row => {
-            val date = row.getAs[String]("day")
-            val province = row.getAs[String]("province")
-            val ad_id = row.getAs[String]("adId").toInt
-            val click_count = row.getAs[Long]("click_count").toInt
+          itr.foreach((row: Row) => {
+            val date: String = row.getAs[String]("day")
+            val province: String = row.getAs[String]("province")
+            val ad_id: Int = row.getAs[String]("adId").toInt
+            val click_count: Int = row.getAs[Long]("click_count").toInt
 
             val bean: AdProvinceTop3 = new AdProvinceTop3(date: String, province: String, ad_id: Int, click_count: Int)
             beans.add(bean)
