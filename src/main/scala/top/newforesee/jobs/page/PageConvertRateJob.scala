@@ -6,25 +6,112 @@ import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.serializer.SerializerFeature
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{Row, SparkSession}
+import top.newforesee.bean.page.PageSplitConvertRate
 import top.newforesee.bean.{Task, TaskParam}
+import top.newforesee.constants.Constants
 import top.newforesee.dao.common.ITaskDao
 import top.newforesee.dao.common.impl.TaskDaoImpl
+import top.newforesee.dao.page.IPageSplitConvertRate
+import top.newforesee.dao.page.impl.PageSplitConvertRateImpl
 import top.newforesee.mock.MockData
-import top.newforesee.utils.ResourcesUtils
+import top.newforesee.utils.{NumberUtils, ResourcesUtils, StringUtils}
+
+import scala.collection.mutable
 
 /**
   * creat by newforesee 2018/11/29
   */
 object PageConvertRateJob {
-  def main(args: Array[String]): Unit = {
-    prepareOperate(args)
 
+
+
+
+  def main(args: Array[String]): Unit = {
+    //前提准备
+    val spark: SparkSession = prepareOperate(args)
+
+    //1.按条件筛选筛选session
+    val tuple: (RDD[Row], util.List[Integer]) = filterSessionByCondition(spark, args)
+    //2.求页面单挑转化率
+    val page_flow_temp: String = calPageConvert(spark, args, tuple)
+    //3.将结果保存到数据库
+    saveResultToDB(args, page_flow_temp)
+
+
+    //4.释放资源
+    spark.stop()
   }
+
+  /**
+    * 将结果保存到db中
+    * @param args 主函数参数
+    * @param page_flow_temp  页面单挑转化率结果
+    */
+  def saveResultToDB(args: Array[String], page_flow_temp: String): Unit = {
+    val bean: PageSplitConvertRate = new PageSplitConvertRate(args(0).toInt, page_flow_temp)
+    val dao: IPageSplitConvertRate = new PageSplitConvertRateImpl
+    dao.saveToDB(bean)
+  }
+
+  /**
+    * 求页面单条转化率
+    *
+    * @param spark SparkSession
+    * @param args  Array[String]
+    * @param tuple (RDD[Row], util.List[Integer])
+    * @return
+    */
+  def calPageConvert(spark: SparkSession, args: Array[String], tuple: (RDD[Row], util.List[Integer])): String = {
+    val rdd: RDD[Row] = tuple._1
+    val page_flow: util.List[Integer] = tuple._2
+
+
+    //前提:
+    //①准备一个容器，用来存储每个页面的点击次数
+    val container: mutable.HashMap[Int, Int] = new mutable.HashMap[Int, Int]()
+
+    //②依次从页面流中取出每一个页面的编号，从RDD中与每个元素（页面id）进行比对,计算吻合的总次数，即为：当前页面点击的总数
+
+    for (i <- 0 until page_flow.size){
+      val page_id: Integer = page_flow.get(i)
+      val nowPageTotalCnt: Long = rdd.filter((row: Row) =>row.getAs[Int]("page_id")==page_id).count()
+      //将当前页面访问的次数存入到容器中
+      container.put(page_id,nowPageTotalCnt.toInt)
+    }
+
+    var page_flow_str: StringBuilder = new mutable.StringBuilder()
+    //  val PAGE_FLOW: String = "1_2=0|2_3=0|3_4=0|4_5=0|5_6=0|6_7=0|7_8=0|8_9=0|9_10=0"
+    for (i <- 0 until page_flow.size()-1 ){
+      val before: Integer = page_flow.get(i)
+      val after: Integer = page_flow.get(i+1)
+      page_flow_str.append(before).append("_").append(after).append(Constants.COMMON_INIT)
+    }
+    page_flow_str = page_flow_str.deleteCharAt(page_flow_str.length-1)
+    var page_flow_temp: String = page_flow_str.toString()
+    for(i<-0 until page_flow.size()-1){
+      val now_page_id: Integer = page_flow.get(i)
+      val next_page_id: Integer = page_flow.get(i+1)
+      val field: String = next_page_id+"_"+next_page_id
+      val now_page_id_cnt: Int = container(now_page_id)
+      val next_page_id_cnt: Int = container(next_page_id)
+      var rate = 0.0
+      if (next_page_id_cnt==0 || now_page_id_cnt==0) {
+        rate=0
+      }else{
+        rate = next_page_id_cnt.toDouble/now_page_id_cnt
+      }
+     page_flow_temp = StringUtils.setFieldInConcatString(page_flow_temp,"\\|",field,rate.toString)
+
+    }
+
+    page_flow_temp
+  }
+
 
   /**
     * 准备操作
     *
-    * @param args
+    * @param args args: Array[String]
     * @return
     */
   private def prepareOperate(args: Array[String]): SparkSession = {
@@ -62,8 +149,8 @@ object PageConvertRateJob {
   /**
     * 按条件筛选session
     *
-    * @param spark
-    * @param args
+    * @param spark SparkSession
+    * @param args  args: Array[String]
     */
   def filterSessionByCondition(spark: SparkSession, args: Array[String]): (RDD[Row], util.List[Integer]) = {
     //①准备一个字符串构建器的实例StringBuffer，用于存储sql
@@ -71,33 +158,33 @@ object PageConvertRateJob {
     buffer.append("select u.page_id from  user_visit_action u,user_info i where u.user_id=i.user_id ")
 
     //②根据从mysql中task表中的字段task_param查询到的值，进行sql语句的拼接
-    val taskId = args(0).toInt
+    val taskId: Int = args(0).toInt
     val taskDao: ITaskDao = new TaskDaoImpl
     val task: Task = taskDao.findTaskById(taskId)
 
     // task_param={"ages":[0,100],"genders":["男","女"],"professionals":["教师", "工人", "记者", "演员", "厨师", "医生", "护士", "司机", "军人", "律师"],"cities":["南京", "无锡", "徐州", "常州", "苏州", "南通", "连云港", "淮安", "盐城", "扬州"]})
-    val taskParamJsonStr = task.getTask_param();
+    val taskParamJsonStr: String = task.getTask_param
 
     //使用FastJson，将json对象格式的数据封装到实体类TaskParam中
     val taskParam: TaskParam = JSON.parseObject[TaskParam](taskParamJsonStr, classOf[TaskParam])
 
     //获得参数值
-    val ages = taskParam.getAges
-    val genders = taskParam.getGenders
-    val professionals = taskParam.getProfessionals
-    val cities = taskParam.getCities
+    val ages: util.List[Integer] = taskParam.getAges
+    val genders: util.List[String] = taskParam.getGenders
+    val professionals: util.List[String] = taskParam.getProfessionals
+    val cities: util.List[String] = taskParam.getCities
 
     //新增的条件
-    val start_time = taskParam.getStart_time
-    val end_time = taskParam.getEnd_time
+    val start_time: String = taskParam.getStart_time
+    val end_time: String = taskParam.getEnd_time
 
     //后续计算的条件
-    val page_flow = taskParam.getPage_flow
+    val page_flow: util.List[Integer] = taskParam.getPage_flow
 
     //ages
     if (ages != null && ages.size() > 0) {
-      val minAge = ages.get(0)
-      val maxAge = ages.get(1)
+      val minAge: Integer = ages.get(0)
+      val maxAge: Integer = ages.get(1)
       buffer.append(" and i.age between ").append(minAge + "").append(" and ").append(maxAge + "")
     }
 
