@@ -1,18 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="099395b3-1468-4b27-8d3d-a8c78f33e086" name="Default Changelist" comment="SparkStreaming 广告实时流计算模块编写(滑动窗以及top3)">
+    <list default="true" id="099395b3-1468-4b27-8d3d-a8c78f33e086" name="Default Changelist" comment="SparkStreaming">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/58d4dde1-df77-40b4-9385-2a679caae5f3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601684000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601684000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601686000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601686000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601688000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601688000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601690000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601690000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601692000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601692000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00004.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00005.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00006.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00007.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00004" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00005" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00006" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00007" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00004.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00005.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00006.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00007.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00004" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00005" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00006" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00007" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00004.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00005.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00006.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00007.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00004" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00005" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00006" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00007" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601684000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601684000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601686000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601686000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601688000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601688000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601690000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601690000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601692000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601692000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/receivedBlockMetadata/log-1543601621531-1543601681531" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ck/receivedBlockMetadata/log-1543601682655-1543601742655" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-statics.log.2018-11-30" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-statics.log.2018-12-01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/log-statics.log.2018-12-05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/kafka/producer.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/CategoryBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdBlackList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdClickTrend.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdProvinceTop3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdProvinceTop3Temp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdStat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdUserClickCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/goods/CityInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/goods/ExtendInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/goods/HotGoodsInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/page/PageSplitConvertRate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/SessionAggrStat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/SessionDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/SessionRandomExtract.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/Top10Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/Top10CategorySession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IADUserClickCountDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdBlackListDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdClickTrendDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdProvinceTop3Dao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdStatDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/ADUserClickCountDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdBlackListDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdClickTrendDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdProvinceTop3DaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdStatDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/ICityInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/IHotGoodsInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/impl/CityInfoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/impl/HotGoodsInfoDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/page/IPageSplitConvertRate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/page/impl/PageSplitConvertRateImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ISessionAggrStat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ISessionDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ISessionRandomExtract.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ITop10Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ITop10CategorySession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/SessionAggrStatImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/SessionDetailImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/SessionRandomExtractImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/Top10CategoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/Top10CategorySessionImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$12$$anonfun$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$5$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3$$anonfun$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3$$anonfun$apply$3$$anonfun$apply$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3$$anonfun$apply$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProvinceCityClickCnt$1$$anonfun$apply$5$$anonfun$apply$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProvinceCityClickCnt$1$$anonfun$apply$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProvinceCityClickCnt$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayUserClickAdCnt$1$$anonfun$apply$9$$anonfun$apply$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayUserClickAdCnt$1$$anonfun$apply$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayUserClickAdCnt$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$3$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$3$$anonfun$apply$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$2$$anonfun$apply$7$$anonfun$apply$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$2$$anonfun$apply$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$calPerAreaTop3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$calPerAreaTop3$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$saveResultToDB$1$$anonfun$apply$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$saveResultToDB$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator4$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$2$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/SessionAggrStatAccumulator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$aggrResultToDB$1$$anonfun$apply$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$aggrResultToDB$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$1$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$1$$anonfun$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calTop10ClickCntSession$1$$anonfun$apply$mcVJ$sp$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calTop10ClickCntSession$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$getStepLenAndTimeLenRate$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$getStepLenAndTimeLenRate$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$randomExtract1000Session$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$randomSessionToDetail$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$typecreator1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$typecreator2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/mock/MockRealTimeData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/SessionTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-statics.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log-statics.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/goods/ExtendInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/goods/ExtendInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/goods/HotGoodsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/goods/HotGoodsInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/page/PageSplitConvertRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/bean/page/PageSplitConvertRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/IHotGoodsInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/IHotGoodsInfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/impl/CityInfoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/impl/CityInfoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/impl/HotGoodsInfoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/impl/HotGoodsInfoDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/page/impl/PageSplitConvertRateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/newforesee/dao/page/impl/PageSplitConvertRateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/goods/HotGoodsAnalysisJob.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/goods/HotGoodsAnalysisJob.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/page/PageConvertRateJob.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/page/PageConvertRateJob.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,19 +244,22 @@
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.52" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -81,14 +269,14 @@
           <entry key="properties" value="132" />
           <entry key="scala" value="10172" />
           <entry key="sql" value="6" />
-          <entry key="txt" value="74" />
+          <entry key="txt" value="101" />
           <entry key="xml" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="4345" />
-          <entry key="PLAIN_TEXT" value="74" />
+          <entry key="PLAIN_TEXT" value="101" />
           <entry key="Properties" value="132" />
           <entry key="SQL" value="6" />
           <entry key="Scala" value="10172" />
@@ -129,7 +317,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/goods/HotGoodsAnalysisJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="1254">
               <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding>
                 <element signature="e#35#51#0" expanded="true" />
@@ -141,7 +329,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/IHotGoodsInfoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="154">
               <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
@@ -150,8 +338,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/impl/HotGoodsInfoDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="308">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,8 +350,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/page/PageConvertRateJob.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="102" column="33" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="33" />
+            <state relative-caret-position="501">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
               <folding>
                 <element signature="e#34#50#0" expanded="true" />
               </folding>
@@ -174,8 +362,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/page/impl/PageSplitConvertRateImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="220">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -194,16 +382,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -211,7 +389,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/constants/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-971">
+            <state relative-caret-position="132">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
@@ -220,42 +398,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/goods/HotGoodsInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
+            <state relative-caret-position="176">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1031#1032#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1512#1513#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1609#1610#0" expanded="true" />
-                <element signature="e#1661#1662#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -367,7 +511,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="122" />
+    <option name="x" value="172" />
     <option name="y" value="22" />
     <option name="width" value="1513" />
     <option name="height" value="995" />
@@ -634,7 +778,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544104747888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544105030620" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -786,7 +930,11 @@
       <workItem from="1543903126713" duration="19327000" />
       <workItem from="1543996972860" duration="13546000" />
       <workItem from="1544060059651" duration="11732000" />
-      <workItem from="1544094828236" duration="9726000" />
+      <workItem from="1544094828236" duration="10075000" />
+      <workItem from="1544144003393" duration="2237000" />
+      <workItem from="1544192123380" duration="575000" />
+      <workItem from="1544232278611" duration="595000" />
+      <workItem from="1544339291445" duration="526000" />
     </task>
     <task id="LOCAL-00001" summary="搭建项目框架，构建工具类">
       <created>1543240556624</created>
@@ -865,7 +1013,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543932735551</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完成热门商品离线统计以及页面单跳">
+      <created>1544104843955</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544104843955</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -883,7 +1038,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178869000" />
+    <option name="totallyTimeSpent" value="183151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -895,8 +1050,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1001" extended-state="6" />
-    <editor active="true" />
+    <frame x="172" y="22" width="1513" height="995" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832216" weight="0.20054385" />
       <window_info id="Structure" order="1" sideWeight="0.5016779" side_tool="true" weight="0.25054467" />
@@ -907,17 +1061,17 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3442438" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3465909" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32919955" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32919955" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32932693" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6675731" weight="0.3284091" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003399" side_tool="true" weight="0.31136364" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3272727" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.31136364" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.4996601" visible="true" weight="0.31136364" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -999,7 +1153,8 @@
     <MESSAGE value="session功能模块编写" />
     <MESSAGE value="SparkStreaming 广告实时流计算模块编写" />
     <MESSAGE value="SparkStreaming 广告实时流计算模块编写(滑动窗以及top3)" />
-    <option name="LAST_COMMIT_MESSAGE" value="SparkStreaming 广告实时流计算模块编写(滑动窗以及top3)" />
+    <MESSAGE value="完成热门商品离线统计以及页面单跳" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成热门商品离线统计以及页面单跳" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/TaskParam.java">
@@ -1208,9 +1363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="e#32#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1284,57 +1436,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/mock/MockData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4180">
-          <caret line="204" column="61" selection-start-line="204" selection-start-column="45" selection-end-line="204" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/goods/HotGoodsInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/goods/HotGoodsAnalysisJob.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="1254">
           <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
             <element signature="e#35#51#0" expanded="true" />
@@ -1344,42 +1448,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/IHotGoodsInfoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
+        <state relative-caret-position="154">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/constants/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-971">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/impl/HotGoodsInfoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="308">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/page/PageSplitConvertRate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/page/impl/PageSplitConvertRateImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1390,17 +1477,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/page/impl/PageSplitConvertRateImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/page/PageSplitConvertRate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="132">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/goods/HotGoodsInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/mock/MockData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="204" column="61" selection-start-line="204" selection-start-column="45" selection-end-line="204" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/page/PageConvertRateJob.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="33" />
+        <state relative-caret-position="501">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
           <folding>
             <element signature="e#34#50#0" expanded="true" />
           </folding>
