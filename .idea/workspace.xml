@@ -1,204 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="099395b3-1468-4b27-8d3d-a8c78f33e086" name="Default Changelist" comment="SparkStreaming">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/58d4dde1-df77-40b4-9385-2a679caae5f3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601684000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601684000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601686000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601686000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601688000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601688000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601690000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601690000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601692000.bk.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/.checkpoint-1543601692000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/._partitioner.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00003.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00004.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00005.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00006.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/.part-00007.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/_partitioner" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-465/part-00007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/._partitioner.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00003.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00004.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00005.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00006.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/.part-00007.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/_partitioner" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-491/part-00007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/._partitioner.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00001.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00002.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00003.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00004.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00005.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00006.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/.part-00007.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/_partitioner" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00002" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00003" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00004" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00005" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/011cd856-ba1f-45e4-a4f2-816c0cd57d39/rdd-517/part-00007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601684000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601684000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601686000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601686000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601688000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601688000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601690000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601690000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601692000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/checkpoint-1543601692000.bk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/receivedBlockMetadata/log-1543601621531-1543601681531" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ck/receivedBlockMetadata/log-1543601682655-1543601742655" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/log-statics.log.2018-11-30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/log-statics.log.2018-12-01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/log-statics.log.2018-12-05" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/kafka/producer.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/CategoryBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdBlackList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdClickTrend.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdProvinceTop3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdProvinceTop3Temp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdStat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/ad/AdUserClickCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/goods/CityInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/goods/ExtendInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/goods/HotGoodsInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/page/PageSplitConvertRate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/SessionAggrStat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/SessionDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/SessionRandomExtract.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/Top10Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/bean/session/Top10CategorySession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IADUserClickCountDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdBlackListDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdClickTrendDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdProvinceTop3Dao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/IAdStatDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/ADUserClickCountDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdBlackListDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdClickTrendDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdProvinceTop3DaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/ad/impl/AdStatDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/ICityInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/IHotGoodsInfoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/impl/CityInfoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/goods/impl/HotGoodsInfoDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/page/IPageSplitConvertRate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/page/impl/PageSplitConvertRateImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ISessionAggrStat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ISessionDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ISessionRandomExtract.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ITop10Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/ITop10CategorySession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/SessionAggrStatImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/SessionDetailImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/SessionRandomExtractImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/Top10CategoryImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/dao/session/impl/Top10CategorySessionImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$11.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$12$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$12.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$5$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6$$anonfun$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3$$anonfun$apply$3$$anonfun$apply$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3$$anonfun$apply$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProviceHotADTop3$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProvinceCityClickCnt$1$$anonfun$apply$5$$anonfun$apply$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProvinceCityClickCnt$1$$anonfun$apply$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayProvinceCityClickCnt$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayUserClickAdCnt$1$$anonfun$apply$9$$anonfun$apply$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayUserClickAdCnt$1$$anonfun$apply$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calPerDayUserClickAdCnt$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$3$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$3$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$calSlidewindow$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$2$$anonfun$apply$7$$anonfun$apply$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$2$$anonfun$apply$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$$anonfun$filterBlackListToDB$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$calPerAreaTop3$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$calPerAreaTop3$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$saveResultToDB$1$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$anonfun$saveResultToDB$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator2$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator3$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$$typecreator4$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/goods/HotGoodsAnalysisJob.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$2$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$$anonfun$calPageConvert$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/page/PageConvertRateJob.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/SessionAggrStatAccumulator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$aggrResultToDB$1$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$aggrResultToDB$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$1$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$1$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calClickOrderPayTop10$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calTop10ClickCntSession$1$$anonfun$apply$mcVJ$sp$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$calTop10ClickCntSession$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$getStepLenAndTimeLenRate$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$getStepLenAndTimeLenRate$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$randomExtract1000Session$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$anonfun$randomSessionToDetail$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$$typecreator2$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/jobs/sessions/UserSessionAnasysJob.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/top/newforesee/mock/MockRealTimeData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/SessionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="099395b3-1468-4b27-8d3d-a8c78f33e086" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -269,14 +72,14 @@
           <entry key="properties" value="132" />
           <entry key="scala" value="10172" />
           <entry key="sql" value="6" />
-          <entry key="txt" value="101" />
+          <entry key="txt" value="114" />
           <entry key="xml" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="4345" />
-          <entry key="PLAIN_TEXT" value="101" />
+          <entry key="PLAIN_TEXT" value="114" />
           <entry key="Properties" value="132" />
           <entry key="SQL" value="6" />
           <entry key="Scala" value="10172" />
@@ -290,7 +93,7 @@
           <entry key="java" value="106" />
           <entry key="log" value="1" />
           <entry key="properties" value="12" />
-          <entry key="scala" value="44" />
+          <entry key="scala" value="45" />
           <entry key="sql" value="4" />
           <entry key="xml" value="3" />
         </counts>
@@ -302,7 +105,7 @@
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="12" />
           <entry key="SQL" value="3" />
-          <entry key="Scala" value="44" />
+          <entry key="Scala" value="45" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -314,18 +117,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/goods/HotGoodsAnalysisJob.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-              <folding>
-                <element signature="e#35#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/dao/goods/IHotGoodsInfoDao.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -347,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/page/PageConvertRateJob.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="501">
@@ -355,6 +146,15 @@
               <folding>
                 <element signature="e#34#50#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -544,6 +344,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -677,6 +478,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="newforesee" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkLog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkLog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="newforesee" type="462c0819:PsiDirectoryNode" />
               <item name="mock" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -770,7 +581,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -934,7 +744,7 @@
       <workItem from="1544144003393" duration="2237000" />
       <workItem from="1544192123380" duration="575000" />
       <workItem from="1544232278611" duration="595000" />
-      <workItem from="1544339291445" duration="526000" />
+      <workItem from="1544339291445" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="搭建项目框架，构建工具类">
       <created>1543240556624</created>
@@ -1020,7 +830,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544104843955</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="整体业务实现,分析模块完成">
+      <created>1544339853158</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544339853158</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1038,7 +855,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183151000" />
+    <option name="totallyTimeSpent" value="183914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1052,7 +869,7 @@
   <component name="ToolWindowManager">
     <frame x="172" y="22" width="1513" height="995" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832216" weight="0.20054385" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832216" visible="true" weight="0.21414004" />
       <window_info id="Structure" order="1" sideWeight="0.5016779" side_tool="true" weight="0.25054467" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1067,11 +884,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32919955" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6675731" weight="0.3284091" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003399" side_tool="true" weight="0.31136364" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5010197" side_tool="true" visible="true" weight="0.31136364" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3272727" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.4996601" visible="true" weight="0.31136364" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49898028" visible="true" weight="0.31136364" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1154,7 +971,8 @@
     <MESSAGE value="SparkStreaming 广告实时流计算模块编写" />
     <MESSAGE value="SparkStreaming 广告实时流计算模块编写(滑动窗以及top3)" />
     <MESSAGE value="完成热门商品离线统计以及页面单跳" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成热门商品离线统计以及页面单跳" />
+    <MESSAGE value="整体业务实现,分析模块完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="整体业务实现,分析模块完成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/top/newforesee/bean/TaskParam.java">
@@ -1359,13 +1177,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58d4dde1-df77-40b4-9385-2a679caae5f3/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/sessions/UserSessionAnasysJob.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1512,6 +1323,13 @@
           <folding>
             <element signature="e#34#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/top/newforesee/jobs/ad/AdFlowRealTimeCalJob.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>
