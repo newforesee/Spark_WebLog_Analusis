@@ -1,6 +1,5 @@
 package top.newforesee.dao.goods.impl;
 
-import com.sun.tools.javac.comp.Todo;
 import org.apache.commons.dbutils.QueryRunner;
 import top.newforesee.bean.goods.HotGoodsInfo;
 import top.newforesee.dao.goods.IHotGoodsInfoDao;
