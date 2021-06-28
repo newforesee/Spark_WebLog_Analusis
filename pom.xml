@@ -11,7 +11,7 @@
     <properties>
         <scala.version>2.11.8</scala.version>
         <spark.version>2.2.2</spark.version>
-        <jackson.version>2.6.6</jackson.version>
+        <jackson.version>2.9.10.7</jackson.version>
         <hbase.version>1.2.6</hbase.version>
     </properties>
 
